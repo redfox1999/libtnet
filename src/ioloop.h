@@ -26,7 +26,7 @@ namespace tnet
         //after is milliseconds
         TimerPtr_t runAfter(int after, const Callback_t& callback);
 
-        //this only thread safe
+        //this only thread safe RunInLoop
         void addCallback(const Callback_t& callback);
 
         //timeout is milliseconds

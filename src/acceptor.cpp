@@ -84,7 +84,7 @@ namespace tnet
         m_running = false;
 
         LOG_INFO("stop %d", m_sockFd);
-        m_loop->removeHandler(m_sockFd);    
+        m_loop->removeHandler(m_sockFd); 
     }
 
     void Acceptor::onAccept(IOLoop* loop, int events)
@@ -108,7 +108,8 @@ namespace tnet
         {
             LOG_INFO("onAccept %d", sockFd);
             
-            SockUtil::setNoDelay(sockFd, true);
+            // default not NoDelay
+            // SockUtil::setNoDelay(sockFd, true);
 
             m_callback(loop, sockFd);    
         } 
