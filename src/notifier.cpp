@@ -2,6 +2,7 @@
 
 #include <sys/eventfd.h>
 #include <assert.h>
+#include <unistd.h>
 
 #include "log.h"
 #include "ioloop.h"

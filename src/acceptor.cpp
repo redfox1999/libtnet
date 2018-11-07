@@ -5,6 +5,7 @@
 #include <sys/socket.h>
 #include <errno.h>
 #include <assert.h>
+#include <unistd.h>
 
 #include <memory>
 #include <functional>

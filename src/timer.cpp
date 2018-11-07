@@ -3,6 +3,7 @@
 #include <assert.h>
 #include <sys/timerfd.h>
 #include <errno.h>
+#include <unistd.h>
 
 #include "ioloop.h"
 #include "log.h"

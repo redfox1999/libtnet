@@ -6,6 +6,7 @@
 #include <sys/socket.h>
 #include <sys/uio.h>
 #include <assert.h>
+#include <unistd.h>
 #include "ioloop.h"
 #include "log.h"
 #include "sockutil.h"

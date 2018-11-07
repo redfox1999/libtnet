@@ -12,6 +12,7 @@
 #include <string.h>
 #include <sys/ioctl.h>
 #include <net/if.h>
+#include <unistd.h>
 
 #include "address.h"
 #include "log.h"
